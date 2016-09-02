@@ -1,0 +1,27 @@
+body {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url("https://thumbs.dreamstime.com/z/virus-bug-program-code-21387926.jpg");
+    color: white;
+}
+
+.navbar-custom {
+    padding: 15px 15px;
+    height: 80px;
+    border: none;
+    background-color: #4A0F0F;
+    font-family: 'Audiowide', cursive;
+    font-size: 1.5em;
+
+}
+
+
+.navbar-default .navbar-brand {
+  font-size: 2em;
+  /*background-color: black;
+  color: #4A0F0F;*/
+
+}
