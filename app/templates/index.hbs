@@ -2,6 +2,6 @@
 
 <ul>
   {{#each model as |question|}}
-  <li>{{question.author}} asked {{question.message}}</li>
+    {{question-tile question=question}}
   {{/each}}
 </ul>
