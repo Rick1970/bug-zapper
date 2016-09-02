@@ -1,1 +1,7 @@
-{{outlet}}
+<h1>Welcome to the Bug Zapper.</h1>
+
+<ul>
+  {{#each model as |question|}}
+  <li>{{question.author}} asked {{question.message}}</li>
+  {{/each}}
+</ul>

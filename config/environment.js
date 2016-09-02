@@ -13,6 +13,14 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+      apiKey: "AIzaSyClVNyGqr0cyPNrIUZFHB1rSV6KCC_UC94",
+      authDomain: "bug-zapper.firebaseapp.com",
+      databaseURL: "https://bug-zapper.firebaseio.com",
+      storageBucket: "",
+    },
+
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
