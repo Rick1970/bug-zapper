@@ -6,6 +6,7 @@ body {
     ),
     url("https://thumbs.dreamstime.com/z/virus-bug-program-code-21387926.jpg");
     color: white;
+    font-family: 'Baloo Chettan', cursive;
 }
 
 .navbar-custom {
@@ -45,4 +46,8 @@ body {
 
 .contrast {
   color: black;
+}
+
+h1 {
+  font-family: 'Baloo Chettan', cursive;
 }
