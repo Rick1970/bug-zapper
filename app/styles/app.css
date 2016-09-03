@@ -15,13 +15,12 @@ body {
     border: none;
     background-color: #4A0F0F;
     font-family: 'Audiowide', cursive;
-    font-size: 1.5em;
 
 }
 
 
 .navbar-default .navbar-brand {
-  font-size: 2em;
+  font-size: 3em;
   /*background-color: black;
   color: #4A0F0F;*/
 
@@ -50,4 +49,7 @@ body {
 
 h1 {
   font-family: 'Baloo Chettan', cursive;
+}
+li {
+  font-size: 1.5em;
 }
