@@ -9,5 +9,8 @@ export default Ember.Component.extend({
     questionHide: function(){
       this.set('isQuestionShowing', false);
     },
+    update(question, params) {
+      this.sendAction('update', question, params);
+    }
   }
 });
