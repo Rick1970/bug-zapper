@@ -1,8 +1,9 @@
 <li>
-  {{question.author}} asked:
+  <h3>{{question.author}} asked:</h3>
+  {{question.message}}
   {{#if isQuestionShowing}}
-  <p><span {{action 'questionHide'}}>{{question.message}}<br>{{question.detail}}</span></p>
+  <p><span {{action 'questionHide'}}><br>{{question.detail}}</span></p>
   {{else}}
-  <button class="btn-custom btn-xs" {{action "questionShow"}}>Show</button>
+  <button class="btn-custom btn-xs" {{action "questionShow"}}>Show Code Snippet</button>
   {{/if}}
 </li>
