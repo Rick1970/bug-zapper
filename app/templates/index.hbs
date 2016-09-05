@@ -2,7 +2,7 @@
   <div class="col-md-6">
 <h1>Here are the active questions:</h1>
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{question-tile question=question update="update"}}
   {{/each}}
 </ul>
@@ -11,5 +11,12 @@
 <h1>Don't see anything you can use??</h1>
 <h3>Ask a new question</h3>
 {{new-question save="save"}}
+<h3>Responses</h3>
+{{new-response saveResponse="saveResponse"}}
+<ul>
+  {{#each model.responses as |response|}}
+  <li>{{response.author}}</li>
+  {{/each}}
+</ul>
 </div>
 </div>
