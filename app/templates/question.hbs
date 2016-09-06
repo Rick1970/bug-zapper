@@ -1,11 +1,11 @@
-<h1>Question: {{model.author}}</h1>
-{{model.message}}
-{{model.detail}}
-
+<h1>{{model.author}} asked:</h1>
+<h3>{{model.message}}</h3>
+<h3>{{model.detail}}</h3>
+<h1>Responses:</h1>
 <ul>
   {{#each model.responses as |response|}}
-  <li>{{response.author}}</li>
-  <li>{{response.message}}</li>
+  <li><h3>{{response.author}} replied:<br>
+  {{response.message}}</h3></li>
   {{/each}}
 </ul>
 
