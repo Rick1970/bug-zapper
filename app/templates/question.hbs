@@ -1,0 +1,14 @@
+<h1>Question: {{model.author}}</h1>
+{{model.message}}
+{{model.detail}}
+
+<ul>
+  {{#each model.responses as |response|}}
+  <li>{{response.author}}</li>
+  <li>{{response.message}}</li>
+  {{/each}}
+</ul>
+
+{{update-question question=model update="update"}}
+
+{{new-response saveResponse="saveResponse" question=model}}
