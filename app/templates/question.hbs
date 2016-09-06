@@ -3,9 +3,9 @@
 <h1>{{model.author}} asked:</h1>
 <h3>{{model.message}}</h3>
 <h3>{{model.detail}}</h3>
-{{update-question question=model update="update"}}
-
 {{new-response saveResponse="saveResponse" question=model}}
+<br>
+{{update-question question=model update="update"}}
 </div>
   <div class="col-md-6">
 <h1>Responses:</h1>
