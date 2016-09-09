@@ -3,7 +3,7 @@
 <h1>Questions:</h1>
 <ul id="cool">
   {{#each model.questions as |question|}}
-  <li>{{#link-to 'question' question.id}}
+  <li>{{no-response question}}{{#link-to 'question' question.id}}
   {{question.author}} asked: <br> {{question.message}}
   {{/link-to}}</li>
   {{/each}}
