@@ -5,7 +5,9 @@
   {{#each model.questions as |question|}}
   <li>{{no-response question}}{{#link-to 'question' question.id}}
   {{question.author}} asked: <br> {{question.message}}
-  {{/link-to}}</li>
+  {{/link-to}}
+  <button class="btn-custom" {{action 'addToFavorites' question}}>Add To Favorites</button>
+</li>
   {{/each}}
 </ul>
 </div>
