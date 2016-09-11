@@ -17,6 +17,7 @@ export default Ember.Route.extend({
     },
     addToFavorites(question){
       this.get('favoriteQuestions').add(question);
+      this.transitionTo('favorites');
     }
   }
 });

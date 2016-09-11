@@ -8,6 +8,6 @@ export default DS.Model.extend({
   responses: DS.hasMany('response', {async: true}),
 
   fullQuestion: Ember.computed(function() {
-    return this.get('author') + ' asked:  ' + this.get('message') + ('detail');
+    return this.get('author') + ' asked:  ' + this.get('message') + this.get('detail');
   })
 });
